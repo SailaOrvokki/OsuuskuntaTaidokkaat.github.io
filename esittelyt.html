@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Osuuskunta Taidokkaat kotisivut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Oma tyylitiedosto -->
+  <link rel="stylesheet" href="tyyli_index.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v12.0" nonce="MkRONH6y"></script>
+    
+    <!-- Yläpalkki alkaa, kaikilla sivuilla sama -->
+    <div id="header-img">
+        <!-- Taidokkaiden ylä-logo alkaa -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="kuvat/taidokkaat.png" alt="taidokkaat-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Taidokkaiden ylä-logo loppuu -->
+    
+    <!-- Yläreunaan kiinnitetty valikointipalkki alkaa -->
+    <nav class="navbar navbar-expand-sm justify-content-center sticky-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(5, 5, 55);" href="index.html">ETUSIVU</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(5, 5, 55);" href="#contact">YHTEYSTIEDOT</a>
+            </li>
+            
+            <!-- Alasvetovalikko 1 alkaa -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(5, 5, 55);" href="#co-operate" id="navbardrop" data-toggle="dropdown">PALVELUT</a>
+                <div class="dropdown-menu" style="background-color: rgb(255, 246, 227);">
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#pricing">HINNASTO</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">JÄSENYYS</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">TEKIJÄT</a>
+                </div>
+            </li>
+            <!-- Alasvetovalikko 1 loppuu -->
+            
+            <!-- Alasvetovalikko 2 alkaa -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(5, 5, 55);" href="#co-operate" id="navbardrop" data-toggle="dropdown">OSUUSKUNNATA</a>
+                <div class="dropdown-menu" style="background-color: rgb(255, 246, 227);">
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">TIETOA OSUUSKUNNATA</a>                        
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">JÄSENYYS</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#team">TEKIJÄT</a>
+                </div>
+            </li>
+            <!-- Alasvetovalikko 2 loppuu -->
+        </ul>
+    </nav>
+    <!-- Yläreunaan kiinnitetty valikointipalkki loppuu -->
+    <!-- Yläpalkki päättyy, kaikilla sivuilla sama -->
+
+    <!-- Lyhyt esittelyteksti alkaa-->
+    <div class="container" id="esittely">
+        <div class="row">
+            <div class="col-sm">
+                <h2> ME, TAIDOKKAAT TEKIJÄT </h2>
+                <p> Osuuskunta Taidokkaat tekijätprofiilit </p>
+              
+            </div>
+        </div>
+    </div>
+    <!-- Lyhyt esittelyteksti loppuu-->
+
+
+    
+    <!-- Alapalkki alkaa, kaikilla sivuilla sama -->
+    <div id="my-footer">
+        <hr style="height:1px; background-color: orange;">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--LINKIT 1 alkaa -->
+                <div class="col-sm">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Usein käytetyt sivut</h6>
+                    <p> <a href="#index">ETUSIVU</a> </p>
+                    <p> <a href="#team">TEKIJÄT</a> </p>
+                    <p> <a href="#pricing">HINNASTO</a> </p>
+                    <p> <a href="#cooperative">TIETOA OSUUSKUNNASTA</a> </p>
+                    <p> <a href="#contact">OTA YHTEYTTÄ</a> </p>
+                </div>
+                <!--LINKIT 1 loppuu -->
+                
+                <!--Yhteystiedot alkaa -->
+                <div class="col-sm">
+                    <h6 class="text-uppercase font-weight-bold">YHTEYSTIEDOT</h6>
+                    <p>Postiosoite: <br>
+                        Laaduntie 4 B 10, 33480 Ylöjärvi
+                    </p>
+                    <p>Sähköposti: <br>
+                        <a href="mailto:info@taidokkaat.fi">info@taidokkaat.fi</a>
+                    </p>
+                    <p>Puhelin: <br>
+                        <a href="tel:+35840 621 6671">+358 40 621 6671</a>, arkisin klo 9-17
+                    </p>
+                    <p>Y-tunnus: <br>
+                        2753916-1</p>
+                        <!-- Yhteystiedot loppuu -->
+                    </div>
+                    
+                    <!--LINKIT 2 alkaa-->
+                    <div class="col-sm">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Linkki vinkit</h6>
+                        <p> <a href="https://pellervo.fi/" target="_blank">Pellervo, osuuskuntakeskus</a> </p>
+                        <p> <a href="https://perustajanopas.pellervo.fi/" target="_blank">Osuuskunnan perustajan opas</a> </p>
+                        <p> <a href="https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48011/osuuskunnan-ja-sen-jasenen-verotuksesta/" target="_blank">Osuuskunnan ja sen jäsenen verotus-vero.fi</a> </p>
+                        <br>
+                    </div>
+                    <!--LINKIT 2 LOPPUU -->
+                </div>
+            </div>
+           
+            <hr style="height:1px; background-color: orange;">
+            
+            <!-- Sivut aukeaa uuteen selainikkunaan  -->
+            <div id="copyright">
+                 <div class="col">
+                    <div>
+                        <!-- Copyright ja Tietosuojaseloste -->
+                        <div>
+                            <strong><a href="https://www.digiturvamalli.fi/kayttoehdot" target="_blank">Käyttöehdot</a>
+                                |   <a href="https://tietosuoja.fi/tietosuojalaki" target="_blank">Tietosuojaseloste</a>
+                                |   <a href="https://www.saavutettavuusvaatimukset.fi/digipalvelulain-vaatimukset/" target="_blank">Saavutettavuusseloste</a>
+                                |   <a href="https://support.google.com/chrome/answer/95647?hl=fi&co=GENIE.Platform%3DDesktop" target="_blank">Evästeet</a>
+                            </strong>
+                        </div>
+                        <!-- LOPPUU Grid column; Copyright ja Tietosuojaseloste -->
+                    </div>
+                </div>
+
+                <hr style="height:1px; background-color: orange;">
+
+                <p>© 2021 Copyright: Osuuskunta Taidokkaat / Saila Hyvönen</p>
+            </div>
+        </div>
+    </div>
+    <!-- Alapalkki loppuu, kaikilla sivuilla sama -->
+
+</body>
+</html>

@@ -1,653 +1,386 @@
-<html><head><title>OStaidokkaat-etusivu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="tyyli.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Osuuskunta Taidokkaat kotisivut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Oma tyylitiedosto -->
+  <link rel="stylesheet" href="tyyli_index.css">
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v12.0" nonce="MkRONH6y"></script>
 
-    <style>
-        body,h1,h2,h3,h4,h5 {
-            font-family: "Raleway", sans-serif
-        }
-        </style>
-    </head><body id="myPage">
-    
-    <!-- Sidebar on click -->
-    <!-- <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-        <i class="fa fa-remove"></i>
-      </a>
-      <a href="#" class="w3-bar-item w3-button">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button">Link 3</a>
-      <a href="#" class="w3-bar-item w3-button">Link 4</a>
-      <a href="#" class="w3-bar-item w3-button">Link 5</a>
-    </nav> -->
-    <div class="header">
-      <!-- <div class="container-fluid p-3 my-3 text-white"> -->
-          <!-- <a class="navbar-brand" href="#"> -->
-            <!-- <img src="kuvat/taidokkaat.png" alt="taidokkaat" style="width:100%;min-height:200px;max-height:300px;">
-          </a>
-        </div> -->
+    <!-- Yläpalkki alkaa, kaikilla sivuilla sama -->
+    <div id="header-img">
+        <!-- Taidokkaiden ylä-logo alkaa -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="kuvat/taidokkaat.png" alt="taidokkaat-logo">
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Taidokkaiden ylä-logo loppuu -->
 
-    <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
-      <!-- Brand/logo -->
-      <!-- <a class="navbar-brand" href="#">Logo</a> -->
-      
-      <!-- Links -->
-      <!-- <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link 3</a>
-        </li>
-      </ul>
-    </nav> -->
+    <!-- Yläreunaan kiinnitetty valikointipalkki alkaa -->
     <nav class="navbar navbar-expand-sm justify-content-center sticky-top">
-      <div>
-        <a class="navbar-brand" href="#">
-          <img src="kuvat/taidokkaat.png" alt="logo" style="width:100px;">
-        </a>
-      </div>
-     <div>
-      <!-- <div class="w3-bar w3-theme-d2 w3-center"> -->
-        <!-- <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-         -->
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ETUSIVU</a>
-        <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">TEKIJÄT</a>
-        <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">TYÖT</a>
-          <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button" title="Notifications">PALVELUT <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-            <a href="#" class="w3-bar-item w3-button">TIETOA OSUUSKUNNATA</a>
-            <a href="#" class="w3-bar-item w3-button">JÄSENYYS</a>
-            <a href="#pricing" class="w3-bar-item w3-button">HINNASTO</a>
-            <a href="#contact" class="w3-bar-item w3-button">YHTEYSTIEDOT</a>
-          </div>
-        </div>
-      <!-- <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="testisivu.html">ETUSIVU</a>
-        </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" href="">TEKIJÄT</a>
-        </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" href="/login">Kirjaudu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/ilmoitukset">Kirjailmoitukset</a>
-        </li>
-        <li class="nav-item">
-          
-          <a class="nav-link" href="#" data-toggle="tooltip" title="" data-original-title="Ostoksia 2 kpl">Ostoskori</a> -->
-    
-          <!-- tooltip script alkaa, eriytä -->
-         <!-- <script>
-            $(document).ready(function () {
-              $('[data-toggle="tooltip"]').tooltip();
-            });
-          </script>  -->
-          <!--tooltip script loppuu, eriytä-->
-        <!-- </li>
-      
-      </ul> -->
-    </div>
-    </nav>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(5, 5, 55);" href="index.html">ETUSIVU</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(5, 5, 55);" href="#contact">YHTEYSTIEDOT</a>
+            </li>
 
+            <!-- Alasvetovalikko 1 alkaa -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(5, 5, 55);" href="#co-operate" id="navbardrop" data-toggle="dropdown">PALVELUT</a>
+                <div class="dropdown-menu" style="background-color: rgb(255, 246, 227);">
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="hinnasto.html">HINNASTO</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">JÄSENYYS</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">TEKIJÄT</a>
+                </div>
+            </li>
+            <!-- Alasvetovalikko 1 loppuu -->
 
-    <!-- Navbar -->
-    <!-- <div id="mytopnav" class="w3-top">
-     <div class="w3-bar w3-theme-d2 w3-left-align">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-      
-      <a href="#etusivu" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ETUSIVU</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">TEKIJÄT</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">TYÖT</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-button" title="Notifications">PALVELUT <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-          <a href="#" class="w3-bar-item w3-button">TIETOA OSUUSKUNNATA</a>
-          <a href="#" class="w3-bar-item w3-button">JÄSENYYS</a>
-          <a href="#pricing" class="w3-bar-item w3-button">HINNASTO</a>
-          <a href="#contact" class="w3-bar-item w3-button">YHTEYSTIEDOT</a>
-        </div>
-      </div>
-    </div> -->
-    
-      <!-- Navbar on small screens -->
-      <!-- <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-        <a href="#etusivu" class="w3-bar-item w3-button">ETUSIVU</a>
-        <a href="#" class="w3-bar-item w3-button">PAVELUT</a>
-        <a href="#team" class="w3-bar-item w3-button">TEKIJÄT</a>
-        <a href="#work" class="w3-bar-item w3-button">TYÖT</a>
-        <a href="#pricing" class="w3-bar-item w3-button">HINNASTO</a>
-        <a href="#contact" class="w3-bar-item w3-button">YHTEYSTIEDOT</a> -->
-        <!-- <a href="#" class="w3-bar-item w3-button">Search</a> -->
-      <!-- </div>
-    </div> -->
-    
-    <!-- Image Header -->
-    <!-- <div class="w3-display-container w3-animate-opacity">
-      <img src="kuvat/taidokkaat.png" alt="taidokkaat" style="width:100%;min-height:200px;max-height:300px;"> -->
-      <!-- <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
-      </div> -->
-    <!-- </div> -->
-    
-    <!-- Modal -->
-    <!-- <div id="id01" class="w3-modal">
-      <div class="w3-modal-content w3-card-4 w3-animate-top">
-        <header class="w3-container w3-teal w3-display-container"> 
-          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-          <h4>Oh snap! We just showed you a modal..</h4>
-          <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-        </header>
-        <div class="w3-container">
-          <p>Cool huh? Ok, enough teasing around..</p>
-          <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-        </div>
-        <footer class="w3-container w3-teal">
-          <p>Modal footer</p>
-        </footer>
-      </div>
-    </div> -->
-    <div style="height: 25px;"></div>
-
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-
-
-
-    <!-- Navbar -->
-    <!-- <div id="mytopnav" class="w3-top">
-     <div class="w3-bar w3-theme-d2 w3-left-align">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-      
-      <a href="#etusivu" class="w3-bar-item w3-button w3-hide-small w3-hover-white">ETUSIVU</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">TEKIJÄT</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">TYÖT</a>
-        <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-button" title="Notifications">PALVELUT <i class="fa fa-caret-down"></i></button>     
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-          <a href="#" class="w3-bar-item w3-button">TIETOA OSUUSKUNNATA</a>
-          <a href="#" class="w3-bar-item w3-button">JÄSENYYS</a>
-          <a href="#pricing" class="w3-bar-item w3-button">HINNASTO</a>
-          <a href="#contact" class="w3-bar-item w3-button">YHTEYSTIEDOT</a>
-        </div>
-      </div>
-    </div> -->
-    
-      <!-- Navbar on small screens -->
-      <!-- <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-        <a href="#etusivu" class="w3-bar-item w3-button">ETUSIVU</a>
-        <a href="#" class="w3-bar-item w3-button">PAVELUT</a>
-        <a href="#team" class="w3-bar-item w3-button">TEKIJÄT</a>
-        <a href="#work" class="w3-bar-item w3-button">TYÖT</a>
-        <a href="#pricing" class="w3-bar-item w3-button">HINNASTO</a>
-        <a href="#contact" class="w3-bar-item w3-button">YHTEYSTIEDOT</a> -->
-        <!-- <a href="#" class="w3-bar-item w3-button">Search</a> -->
-      <!-- </div>
-    </div> -->
-    
-    <!-- Image Header -->
-    <!-- <div class="w3-display-container w3-animate-opacity">
-      <img src="kuvat/taidokkaat.png" alt="taidokkaat" style="width:100%;min-height:200px;max-height:300px;"> -->
-      <!-- <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
-      </div> -->
-    <!-- </div> -->
-    
-    <!-- Modal -->
-    <!-- <div id="id01" class="w3-modal">
-      <div class="w3-modal-content w3-card-4 w3-animate-top">
-        <header class="w3-container w3-teal w3-display-container"> 
-          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-          <h4>Oh snap! We just showed you a modal..</h4>
-          <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-        </header>
-        <div class="w3-container">
-          <p>Cool huh? Ok, enough teasing around..</p>
-          <p>Go to our <a class="w3-text-teal" href="/w3css/default.asp">W3.CSS Tutorial</a> to learn more!</p>
-        </div>
-        <footer class="w3-container w3-teal">
-          <p>Modal footer</p>
-        </footer>
-      </div>
-    </div> -->
-    <div style="height: 25px;"></div>
-    <!-- Team Container -->
-    <div class="container" id="team">
-      <h2> ME, TAIDOKKAAT TEKIJÄT </h2>
-      <p> Osuuskunnassammae on monta alansa osaajaa ja monen moisa palvelua. </p>
-      <p> Rekisteristämme löytyvät niin mökkitalkkarit, kotisiivoojat, ompeijat ja IT-alan osaajat. </p>
-      <strong><p><a href="#"> Tutustu tekijöihin, palveluhin ja hinnastoon tästä </a></p></strong>
-      <div class="card-deck">
-        <div class="card" style="width:200px">
-          <img class="card-img-top" src="kuvat/Saila.jpg" alt="saila" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title"> Saila Hyvönen </h4>
-            <p class="card-text"> Mittatilausompelu, pukeutumisneuvonta, WEB sivujen tekeminen ja paljon muuta </p>
-            <a href="henkiloesittely.html" class="btn btn-primary" style="background-color: orange;text-decoration: darkblue;"> Tutustu taidokkaaseen Sailaan </a>
-          </div>
-        </div>
-        <div class="card" style="width:200px">
-          <img class="card-img-top" src="kuvat/siivous.png" alt="" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title"> Silja Siivooja </h4>
-            <p class="card-text"> Kotisiivous ja kaikkenlaista kodin ylläpitoa </p>
-            <a href="#" class="btn btn-primary" style="background-color: orange;text-decoration: darkblue;"> Tututstu taidokkaaseen Siljaan </a>
-          </div>
-        </div>
-        <div class="card" style="width:200px">
-          <img class="card-img-top" src="kuvat/talonmies.jpg" alt="talonmies" style="width:100%">
-          <div class="card-body">
-            <h4 class="card-title">Taneli Taidokas</h4>
-            <p class="card-text"> Mökkitalkkari, kaikkien oma Puuha Pete jolta onnistuu nikkaroinnit ja paljon muuta </p>
-            <a href="#" class="btn btn-primary" style="background-color: orange;text-decoration: darkblue;">Tutustu taidokkaaseen Taneliin</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="height: 25px;"></div>
-
-        <!-- hinnasto Container -->
-        <div class="container" id="pricing">
-          <h2>HINNASTO</h2>
-          <p>Choose a pricing plan that fits your needs.</p><br>
-          <p>Tässä vain muutamia esimerkkejä palveluidemme hinnoista.</p>
-          <p>Tutustu <a href="#"> HINNASTO-sivulla </a> on tarkempi hinnasto palveluistamme.</p>
-          <div style="height: 25px;"></div>
-
-          <div class="card-deck">
-            <div class="card" style="width:200px;text-align: center;">
-              <img class="card-img-top" src="kuvat/ompelija.png" alt="siivous" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title"> SIIVOUS-PALVELU </h4>
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                  <li class="w3-padding-16"> - viikkosiivous </li>
-                  <li class="w3-padding-16"> - kuukausisiivous </li>
-                  <li class="w3-padding-16"> - muuttosiivous </li>
-                  <li class="w3-padding-16"> - ikkunoiden pesu </li>
-                  <li class="w3-padding-16"> - pyykinpesu </li>
-                  <li class="w3-padding-16">
-                    <h2 class="w3-wide"><i class='fas fa-euro-sign' style='font-size:48px'></i> Alkaen 20 € </h2>
-                    <span class="w3-opacity"> tunnilta </span>
-                  </li>
-                  <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-center w3-padding-large" style="background-color: orange;"><i class="fa fa-check"></i> Tutustu palveluun </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-    
-            <div class="card" style="width:200px;text-align: center;">
-              <img class="card-img-top" src="kuvat/ompelija.png" alt="talonmies" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title"> TALONMIES-PALVELU </h4>
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                  <li class="w3-padding-16"> - mökkitalkkari </li>
-                  <li class="w3-padding-16"> - lumen luonti </li>
-                  <li class="w3-padding-16"> - pintaremontti </li>
-                  <li class="w3-padding-16"> - maalaus </li>
-                  <li class="w3-padding-16"> - haravointi </li>
-                  <li class="w3-padding-16">
-                    <h2 class="w3-wide"><i class='fas fa-euro-sign' style='font-size:48px'></i>Alkaen 20 € </h2>
-                    <span class="w3-opacity"> tunnilta </span>
-                  </li>
-                  <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-center w3-padding-large" style="background-color: orange;"><i class="fa fa-check"></i> Tutustu palveluun </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="card" style="width:200px;text-align: center;">
-              <img class="card-img-top" src="kuvat/ompelija.png" alt="ompelija" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title"> PUKEUTUMIS-PALVELU </h4>
-                <ul class="w3-ul w3-border w3-hover-shadow">
-                  <li class="w3-padding-16"> - pukeutumisneuvonta </li>
-                  <li class="w3-padding-16"> - mittatilausompelu </li>
-                  <li class="w3-padding-16"> - korjausompelu </li>
-                  <li class="w3-padding-16"> - kaavapalvelu </li>
-                  <li class="w3-padding-16"> - suunnittelupalvelu </li>
-                  <li class="w3-padding-16">
-                    <h2 class="w3-wide"><i class='fas fa-euro-sign' style='font-size:48px'></i>Alkaen 20 € </h2>
-                    <span class="w3-opacity"> tunnilta </span>
-                  </li>
-                  <li class="w3-theme-l5 w3-padding-24">
-                    <button class="w3-button w3-center w3-padding-large" style="background-color: orange;"><i class="fa fa-check"></i> Tutustu palveluun </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        </div>
-    
-    <!-- Work Row -->
-    <!-- <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-    
-    <div class="w3-quarter">
-    <h2>Our Work</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    
-    <div class="w3-quarter">
-    <div class="w3-card w3-white">
-      <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-      <div class="w3-container">
-      <h3>Customer 1</h3>
-      <h4>Trade</h4>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      </div>
-      </div>
-    </div>
-    
-    <div class="w3-quarter">
-    <div class="w3-card w3-white">
-      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-      <div class="w3-container">
-      <h3>Customer 2</h3>
-      <h4>Trade</h4>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      </div>
-      </div>
-    </div>
-    
-    <div class="w3-quarter">
-    <div class="w3-card w3-white">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <div class="w3-container">
-      <h3>Customer 3</h3>
-      <h4>Trade</h4>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      <p>Blablabla</p>
-      </div>
-      </div>
-    </div> -->
-    
-    <!-- Container -->
-    <!-- <div class="w3-container" style="position:relative">
-      <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal" style="position:absolute;top:-28px;right:24px">+</a>
-    </div> -->
-
-    <!-- Pricing Row -->
-    <!-- <div id="hinnasto">
-      <h2>HINNASTO</h2>
-      <p>Choose a pricing plan that fits your needs.</p><br>
-      <p>Tässä vain muutamia esimerkkejä palveluidemme hinnoista.</p>
-      <p>Tutustu <a href="hinnasto.html"> HINNASTO-sivulla </a> on tarkempi hinnasto palveluistamme.</p>
-      <div style="height: 25px;"></div>
-    <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-      <div class="w3-third w3-margin-bottom">
-        <ul class="w3-ul w3-border w3-hover-shadow">
-          <img src="kuvat/ompelija.png" class="w3-border" alt="ompeija" style="padding:10px;width:50%;height:50%">
-          <li class="w3-theme">
-            <p class="w3-xlarge"> OMPELU </p>
-          </li>
-          <li class="w3-padding-16"> - mittatilausompelu </li>
-          <li class="w3-padding-16"> - korjausompelu </li>
-          <li class="w3-padding-16"> - kaavapalvelu </li>
-          <li class="w3-padding-16"> - suunnittelupalvelu </li>
-          <li class="w3-padding-16">
-            <h2 class="w3-wide"><i class='fas fa-euro-sign' style='font-size:48px'></i>Alkaen 20 € </h2>
-            <span class="w3-opacity"> tunnilta </span>
-          </li>
-          <li class="w3-theme-l5 w3-padding-24">
-            <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Tutustu palveluun </button>
-          </li>
+            <!-- Alasvetovalikko 2 alkaa -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(5, 5, 55);" href="#co-operate" id="navbardrop" data-toggle="dropdown">OSUUSKUNNATA</a>
+                <div class="dropdown-menu" style="background-color: rgb(255, 246, 227);">
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">TIETOA OSUUSKUNNATA</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">JÄSENYYS</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#team">TEKIJÄT</a>
+                </div>
+            </li>
+            <!-- Alasvetovalikko 2 loppuu -->
         </ul>
-      </div>
-    
-        <div class="w3-third w3-margin-bottom">
-          <ul class="w3-ul w3-border w3-hover-shadow">
-            <img src="kuvat/siivous.png" class="w3-border" alt="siivooja" style="padding:10px;width:50%;height:50%;">
-            <li class="w3-theme-l2">
-              <p class="w3-xlarge">Kotisiivous palvelu</p>
-            </li>
-            <li class="w3-padding-16"><b>25GB</b> Storage</li>
-            <li class="w3-padding-16"><b>25</b> Emails</li>
-            <li class="w3-padding-16"><b>25</b> Domains</li>
-            <li class="w3-padding-16"><b>Endless</b> Support</li>
-            <li class="w3-padding-16">
-              <h2 class="w3-wide"><i class='fas fa-euro-sign' style='font-size:48px'></i> 25 € </h2>
-              <span class="w3-opacity"> tunnilta </span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-              <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Tutustu palveluun </button>
-            </li>
-          </ul>
+    </nav>
+    <!-- Yläreunaan kiinnitetty valikointipalkki loppuu -->
+    <!-- Yläpalkki päättyy, kaikilla sivuilla sama -->
+
+    <!-- Lyhyt esittelyteksti alkaa-->
+    <div class="container" id="team">
+        <div class="row">
+            <div class="col-sm">
+                <h2> ME, TAIDOKKAAT TEKIJÄT </h2>
+                <p style="font-family: Arial, sans-serif; font-size: 15px;">
+                    <br>
+                    Osuuskunta Taidokkaat on vuonna 2016 perustettu ylöjärveläinen työosuuskunta, <br>
+                    jossa luotettavat ammattilaiset tuottavat laadukkaita palveluja kotitalouksille, yrityksille ja yhteisöille.
+                    <br>
+                    Kuulumme Ylöjärven, Nokian, Tampereen ja Pirkkalan palveluntuottajarekisteriin ja <br>
+                    osuuskunnassamme on monta alansa osaajaa ja monen moisa palvelua. <br>
+                    Rekisteristämme löytyvät niin mökkitalkkarit, kotisiivoojat, käsityöntaitajat ja IT-alan osaajat. <br>
+                    <br>
+                    Palvelutarjonnan lisäksi Taidokkaiden tavoitteena on tuottaa hyvinvointia sekä asiakkailleen ja jäsenilleen että asuinympäristölleen.
+                    <br>
+                    Tästä syystä ajoittainen vapaaehtoistyökin kuuluu osuuskuntamme arvomaailmaan.
+                    <br>
+                    Suomalaisen työn liitto on myös myöntänyt Taidokkaille Yhteiskunnallinen yritys-merkin.
+                    <br>
+                    <br>
+                    <img src="kuvat/Y-merkki_logo_vaaka_suomi_sininen_rgb-300x156-300x156.png" alt="Y-merkki" style="width:15%; color: darkorange;">
+                    <br>
+                    <br>
+                    ”Yhteiskunnallinen yrittäminen on vahvasti arvoihin sitoutunutta, taloudellisesti kannattavaa ja  <br>
+                    kestävän kehityksen mukaista yritystoimintaa. Yhteiskunnallisille yrityksille luonteenomaista on,  <br>
+                    että ne uudistavat palvelurakenteita, tuottavat hyvinvointipalveluja inhimillisesti ja  <br>
+                    taloudellisesti kestävällä tavalla, työllistävät ja kehittävät palveluita paikallisista lähtökohdista käsin”.
+
+                    <strong><p><a href="esittelyt.html" style="color: darkorange;"> Lisää osuuskuntatoiminnasta Taidokkaissa </a></p></strong>
+                </p>
+            </div>
         </div>
-    
-        <div class="w3-third w3-margin-bottom">
-          <ul class="w3-ul w3-border w3-hover-shadow">
-            <img src="kuvat/talonmies.jpg" class="w3-border" alt="talonmies" style="padding:10px;width:50%;height:50%">
-            <li class="w3-theme">
-              <p class="w3-xlarge">Talonmies palvelu</p>
-            </li>
-            <li class="w3-padding-16"><b>50GB</b> Storage</li>
-            <li class="w3-padding-16"><b>50</b> Emails</li>
-            <li class="w3-padding-16"><b>50</b> Domains</li>
-            <li class="w3-padding-16"><b>Endless</b> Support</li>
-            <li class="w3-padding-16">
-              <h2 class="w3-wide"><i class='fas fa-euro-sign' style='font-size:48px'></i> 30 € </h2>
-              <span class="w3-opacity">tunnilta</span>
-            </li>
-            <li class="w3-theme-l5 w3-padding-24">
-              <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Tutustu palveluun </button>
-            </li>
-          </ul>
     </div>
-  </div> -->
-    
-  <div style="height: 50px;"></div>
+    <!-- Lyhyt esittelyteksti loppuu-->
 
-<!-- Yhteystiedot ja lomake alkaa -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Ota yhteyttä meihin</span></div>
-      <h3>Toimiston yhteystiedot:</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i> Laaduntie 4 B 10, 33480 Ylöjärvi</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +35840 621 6671, klo 9-17</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i> info@taidokkaat.fi</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  Y-tunnus: 2753916-1</p>
+    <hr style="height:1px; background-color: orange;">
+
+    <!-- Lyhyt esittelyteksti alkaa-->
+    <div class="container" id="team">
+        <div class="row">
+            <div class="col">
+                <h2> TAIDOKKAIDEN PALVELUT </h2>
+                <p style="font-family: Arial, sans-serif; font-size: 15px;">
+                    <br>
+                    Osuuskunta Taidokkaiden luotettavat ammattilaiset tuottavat laadukkaita palveluja kotitalouksille, yrityksille ja yhteisöille.
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card-deck">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-heder">
+                                            <strong><h5> Kotityöpalvelut </h5></strong>
+                                        </div>
+                                        <div class="card-text">
+                                            <hr>
+                                            kotisiivoukset
+                                            <hr>
+                                            ikkunanpesut
+                                            <hr>
+                                            asiointiapu
+                                            <hr>
+                                            saunotus- ja pesuapu
+                                            <hr>
+                                            <strong> alkaen 30 €/h </strong> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-heder">
+                                            <strong><h5> Koti- ja mökkitalkkaripalvelut </h5></strong>
+                                        </div>
+                                        <div class="card-text">
+                                            <hr>
+                                            lumenluonti
+                                            <hr>
+                                            ikkunanpesut
+                                            <hr>
+                                            haravointi
+                                            <hr>
+                                            puiden kaato
+                                            <hr>
+                                            pienimuotoiset remontointi ja korjaustyöt
+                                            <hr>
+                                            renkaiden vaihto
+                                            <hr>
+                                            <strong> alkaen 30 €/h </strong> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-heder">
+                                            <strong><h5> Pukeutumisen palvelut </h5></strong>
+                                        </div>
+                                        <div class="card-text">
+                                            <hr>
+                                            pukeutumisneuvonta
+                                            <hr>
+                                            vaatteiden ompelu
+                                            <hr>
+                                            korjaus ompelu
+                                            <hr>
+                                            kaavoitus palvelu
+                                            <hr>
+                                            koulutus
+                                            <hr>
+                                            <strong> alkaen 30 €/h </strong> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-heder">
+                                            <strong><h5> IT palvelut </h5></strong>
+                                        </div>
+                                        <div class="card-text">
+                                            <hr>
+                                            tietokone huollot
+                                            <hr>
+                                            lähituki
+                                            <hr>
+                                            WordPress sivut
+                                            <hr>
+                                            www-suvujen suunnittelu
+                                            <hr>
+                                            neuvonta/koulutus
+                                            <hr>
+                                            <strong> alkaen 30 €/h </strong> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <strong><p><a href="hinnasto.html" style="color: darkorange;"> Lue lisää Taidokkaiden hinnoista </a></p></strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Nimi (pakollinen)</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">      
-        <label>Sähköposti (pakollinen)</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Aihe</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <div class="w3-section">      
-        <label>Viesti</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <!-- <input class="w3-check" type="checkbox" checked name="Like">
-      <label>tykkää</label> -->
-      <button type="submit" class="w3-button w3-right w3-theme">Lähetä</button>
-      </form>
+    <!-- Lyhyt esittelyteksti loppuu-->
+
+    <hr style="height:1px; background-color: orange;">
+
+    <!-- YHTEYDENOTTOLOMAKE alkaa-->
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <h2 style="text-align: center;"> YHTEYSTIEDOT </h2>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img class="card-img-top" src="kuvat/sopimus.png" alt="sopims" style="width:20%">
+                                        <h5> Oletko kiinnostunut toiminnastamme? <br> Tarvitsetko tekijää?</h5>
+                                        <p> Voit ottaa yhteyttä lomakkeella tai ihan vaikka rimpauttaa numeroon </p>
+                                        <p><a href="tel:+35840 621 6671">+358 40 621 6671</a>, arkisin klo 9-17</p>
+                                        <br>
+                                       <img src="kuvat/luotettavakumppani.jpg" alt="luotettavakumppani" style="width:10%"></p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div id="contactform"></div>
+                                    <h2 style="text-align: center;"> YHTEYDENOTTOLOMAKE </h2>
+                                    <div class="card" style="background-color: rgb(255, 246, 227)">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="card-link" data-toggle="collapse" href="#contactform">
+                                                    Kiinnostuitko toiminnastamme?
+                                                </a>
+                                            </div>
+                                            <div id="collapseInfo" class="collapse show" data-parent="#contactform">
+                                                <div class="card-body">
+                                                    Ota yhteyttä lomakkeella.<br>
+                                                    Lomake aukeaa klikkaamalla <strong>YHTEYDENOTTO LOMAKE</strong>-otsikkoa.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseLomake">
+                                                    AVAA YHTEYDENOTTO LOMAKE
+                                                </a>
+                                            </div>
+                                            <div id="collapseLomake" class="collapse" data-parent="#contactform">
+                                                <div class="card-body" style="text-align: left;">
+                                                    <p> Kaikki kysyttävät tiedot ovat pakollisia, joten täytähän lomakkeen huolellisesti. </p>
+                                                    <form action="/action_page.php" class="was-validated">
+                                                        <div class="form-group">
+                                                            <label for="fullname"> Koko nimesi: </label>
+                                                            <input type="text" class="form-control" id="fullname" placeholder="Anna koko nimesi" name="fulname" required>
+                                                            <div class="valid-feedback"> OK </div>
+                                                            <div class="invalid-feedback"> Anna pyydetyt tiedot, kiitos. </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="email"> Sähköpostiosoite: </label>
+                                                            <input type="email" class="form-control" id="email" placeholder="Anna sähköpostiosoitteesi" name="email" required>
+                                                            <div class="valid-feedback"> OK </div>
+                                                            <div class="invalid-feedback"> Anna pyydetyt tiedot, kiitos. </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="otsikko">Viestin aihe:</label>
+                                                            <input type="text" class="form-control" id="otsikko" placeholder="Yhteydenoton otsikko" name="otsikko" required>
+                                                            <div class="valid-feedback"> OK </div>
+                                                            <div class="invalid-feedback"> Anna pyydetyt tiedot, kiitos. </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="message">Viesti:</label>
+                                                            <input type="textarea" class="form-control" id="message" style="height:200px" placeholder="Kirjoita viestisi..." name="message" required>
+                                                            <div class="valid-feedback"> OK </div>
+                                                            <div class="invalid-feedback"> Anna pyydetyt tiedot, kiitos. </div>
+                                                        </div>
+                                                        <div class="form-group form-check">
+                                                            <label class="form-check-label">
+                                                            <input class="form-check-input" type="checkbox" name="remember" required>
+                                                            <a href="https://www.digiturvamalli.fi/kayttoehdot" target="_blank"> Hyväksyn käyttöehdot </a>
+                                                            <div class="valid-feedback">OK</div>
+                                                            <div class="invalid-feedback">Klikkaa, jatkaaksesi.</div>
+                                                        </label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary" style="background-color: orange; color: rgb(5, 5, 55);"> LÄHETÄ </button>
+                                                </form>
+                                                <!-- !! Poista kaksi seuraavaa riviä, kun lomake toimii !! -->
+                                                <h5><strong><h5> !! Lomakkeen tiedot eivät vielä tallennu mihinkään !! </h5></strong>
+                                                <!-- !! Poista kaksi edellistä riviä, kun lomake toimii !! -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-</div>
+    <!-- YHTEYDENOTTOLOMAKE loppuu-->
 
-<div style="height: 25px;"></div>
+    <!-- Alapalkki alkaa, kaikilla sivuilla sama -->
+    <div id="my-footer">
+        <hr style="height:1px; background-color: orange;">
+        <div class="container-fluid">
+            <div class="row">
 
-<div style="height: 4px; background-color: orange;"></div> 
-   
+                <!--LINKIT 1 alkaa -->
+                <div class="col-sm">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Usein käytetyt sivut</h6>
+                    <p> <a href="#index">ETUSIVU</a> </p>
+                    <p> <a href="#team">TEKIJÄT</a> </p>
+                    <p> <a href="#pricing">HINNASTO</a> </p>
+                    <p> <a href="#cooperative">TIETOA OSUUSKUNNASTA</a> </p>
+                    <p> <a href="#contact">OTA YHTEYTTÄ</a> </p>
+                </div>
+                <!--LINKIT 1 loppuu -->
 
-<div id="footer">
-  <div class="container-fluid">
-    <div class="row">
-        <!--Contact information start-->
-        <div class="col">
-            <h6 class="text-uppercase font-weight-bold">YHTEYSTIEDOT</h6>
-            <p>Postiosoite:<br>
-                Laaduntie 4 B 10, 33480 Ylöjärv</p>
-            <p>Sähköposti:<br>
-                <a href="mailto:info@taidokkaat.fi">info@taidokkaat.fi</a></p>
-              <p>Puhelin:<br>
-                <a href="tel:+35840 621 6671">+358 40 621 6671</a>, arkisin klo 9-17</p>
-              <p>Y-tunnus:<br>
-                2753916-1</p>
-                <!--Contact information stop-->
+                <!--Yhteystiedot alkaa -->
+                <div class="col-sm">
+                    <h6 class="text-uppercase font-weight-bold">YHTEYSTIEDOT</h6>
+                    <p>Postiosoite: <br>
+                        Laaduntie 4 B 10, 33480 Ylöjärvi
+                    </p>
+                    <p>Sähköposti: <br>
+                        <a href="mailto:info@taidokkaat.fi">info@taidokkaat.fi</a>
+                    </p>
+                    <p>Puhelin: <br>
+                        <a href="tel:+35840 621 6671">+358 40 621 6671</a>, arkisin klo 9-17
+                    </p>
+                    <p>Y-tunnus: <br>
+                        2753916-1</p>
+                        <!-- Yhteystiedot loppuu -->
+                    </div>
 
-              <!--Follow Us start-->
-              <h4>Seuraa meitä</h4>
-              <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/search/top?q=osuuskunta%20taidokkaat" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
-              <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-           </div>
-            <!--Follow Us stop-->
+                    <!--LINKIT 2 alkaa-->
+                    <div class="col-sm">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Linkki vinkit</h6>
+                        <p> <a href="https://pellervo.fi/" target="_blank">Pellervo, osuuskuntakeskus</a> </p>
+                        <p> <a href="https://perustajanopas.pellervo.fi/" target="_blank">Osuuskunnan perustajan opas</a> </p>
+                        <p> <a href="https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48011/osuuskunnan-ja-sen-jasenen-verotuksesta/" target="_blank">Osuuskunnan ja sen jäsenen verotus-vero.fi</a> </p>
+                        <br>
+                    </div>
+                    <!--LINKIT 2 LOPPUU -->
+                </div>
+            </div>
 
-      <!--Company information stop-->
+            <hr style="height:1px; background-color: orange;">
 
-      <!--LINKS 1 start-->
-      <div class="col">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Linkki vinkit</h6>
-        <p>
-          <a href="https://pellervo.fi/" target="_blank">Pellervo, osuuskuntakeskus</a>
-        </p>
-        <p>
-          <a href="https://perustajanopas.pellervo.fi/" target="_blank">Osuuskunnan perustajan opas</a>
-        </p>
-        <p>
-          <a href="https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48011/osuuskunnan-ja-sen-jasenen-verotuksesta/" target="_blank">Osuuskunnan ja sen jäsenen verotus-vero.fi</a>
-        </p>
-        <!-- <p>
-          <a href="#!">Sähköoppi</a>
-        </p>
-        <p>
-          <a href="#!">Katering</a>
-        </p> -->
-      </div>
-      <!--LINKS 1 stop-->
+            <!-- Sivut aukeaa uuteen selainikkunaan  -->
+            <div id="copyright">
+                 <div class="col">
+                    <div>
+                        <!-- Copyright ja Tietosuojaseloste -->
+                        <div>
+                            <strong><a href="https://www.digiturvamalli.fi/kayttoehdot" target="_blank">Käyttöehdot</a>
+                                |   <a href="https://tietosuoja.fi/tietosuojalaki" target="_blank">Tietosuojaseloste</a>
+                                |   <a href="https://www.saavutettavuusvaatimukset.fi/digipalvelulain-vaatimukset/" target="_blank">Saavutettavuusseloste</a>
+                                |   <a href="https://support.google.com/chrome/answer/95647?hl=fi&co=GENIE.Platform%3DDesktop" target="_blank">Evästeet</a>
+                            </strong>
+                        </div>
+                        <!-- LOPPUU Grid column; Copyright ja Tietosuojaseloste -->
+                    </div>
+                </div>
 
-      <!--LINKS 2 start-->
-      <div class="col">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Usein käytetyt sivut</h6>
-        <p>
-          <a href="#testisivu">ETUSIVU</a>
-        </p>
-        <p>
-          <a href="#team">TEKIJÄT</a>
-        </p>
-        <p>
-          <a href="#pricing">HINNASTO</a>
-        </p>
-        <p>
-          <a href="#!">TEKIJÄT</a>
-        </p>
-        <p>
-          <a href="#contact">OTA YHTEYTTÄ</a>
-        </p>
-      
-      </div>
-      <!--LINKS 2 stop-->
+                <hr style="height:1px; background-color: orange;">
 
-      <div class="col">
-        <h6 class="text-uppercase font-weight-bold">Yhteisö</h6>
-        <p>Osuuskunta Taidokkaat on vuonna 2016 perustettu ylöjärveläinen työosuuskunta, jossa luotettavat ammattilaiset tuottavat laadukkaita palveluja kotitalouksille, yrityksille ja yhteisöille.</p> 
-        <p>Esimerkkeinä palveluistamme tarjoamme monipuolista kotipalvelutyötä ja henkilöstövuokrausta.</p>
-        <p>Kuulumme Ylöjärven, Nokian, Tampereen ja Pirkkalan palveluntuottajarekisteriin.</p>
-        <img src="kuvat/Y-merkki_logo_vaaka_suomi_sininen_rgb-300x156-300x156.png" alt="Y-merkki" style="width:100px">
-        
-        <img src="kuvat/luotettavakumppani.jpg" alt="luotettavakumppani" style="width:60px">
-      </div>
-      
+                <p>© 2021 Copyright: Osuuskunta Taidokkaat / Saila Hyvönen</p>
+            </div>
+        </div>
     </div>
-    
-    <div style="height: 25px;"></div>
-    <!-- ALKAA Grid column; Copyright ja Tietosuojaseloste -->
-    <!-- Sivut aukeaa uuteen selainikkunaan  -->
-    <div class="row-1" style="text-align:center;">
-      <div class="col">
+    <!-- Alapalkki loppuu, kaikilla sivuilla sama -->
 
-        <div style="height: 15px;"></div> 
-        <hr style="height:2px;border-width:0;color:gray;background-color: orange;">
-        <div style="height: 15px;"></div> 
-
-        <div>
-          <div style="text-align: center;">
-            <strong><a href="https://www.digiturvamalli.fi/kayttoehdot" target="_blank">Käyttöehdot</a>
-              |   <a href="https://tietosuoja.fi/tietosuojalaki" target="_blank">Tietosuojaseloste</a>
-              |   <a href="https://www.saavutettavuusvaatimukset.fi/digipalvelulain-vaatimukset/" target="_blank">Saavutettavuusseloste</a>
-              |   <a href="https://support.google.com/chrome/answer/95647?hl=fi&co=GENIE.Platform%3DDesktop" target="_blank">Evästeet</a>
-            </strong>
-          </div>
-      <!-- LOPPUU Grid column; Copyright ja Tietosuojaseloste -->
-    </div>
-    <!-- Sivun alkuun-nappi alkaa -->
-    <!-- <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-      <span class="w3-text w3-padding w3-teal w3-hide-small">Takaisin alkuun</span>
-      <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-        <i class="fa fa-chevron-circle-up"></i></span></a>
-      </div> -->
-    <!-- Sivun alkuun-nappi loppuu -->
-  </div>
-  <div style="height: 15px;"></div> 
-  <hr style="height:2px;border-width:0;color:gray;background-color: orange;"> 
-  <p>© 2021 Copyright: Osuuskunta Taidokkaat / Saila Hyvönen</p>
-  <div style="height: 15px;"></div> 
-</div>
-
-<script>
-    // Script for side navigation
-    function w3_open() {
-        var x = document.getElementById("mySidebar");
-        x.style.width = "300px";
-        x.style.paddingTop = "10%";
-        x.style.display = "block";
-        }
-    
-    // Close side navigation
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    
-    // Used to toggle the menu on smaller screens when clicking on the menu button
-    function openNav() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
-    
-    
-    </body></html>
+</body>
+</html>

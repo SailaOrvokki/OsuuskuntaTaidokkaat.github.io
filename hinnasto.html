@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Osuuskunta Taidokkaat kotisivut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Oma tyylitiedosto -->
+  <link rel="stylesheet" href="tyyli_index.css">
+
+  <style>
+
+    p.biger:hover, p.biger:active {font-size: 150%;}
+    
+    </style>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v12.0" nonce="MkRONH6y"></script>
+    
+    <!-- Yläpalkki alkaa, kaikilla sivuilla sama -->
+    <div id="header-img">
+        <!-- Taidokkaiden ylä-logo alkaa -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="kuvat/taidokkaat.png" alt="taidokkaat-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Taidokkaiden ylä-logo loppuu -->
+    
+    <!-- Yläreunaan kiinnitetty valikointipalkki alkaa -->
+    <nav class="navbar navbar-expand-sm justify-content-center sticky-top">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(5, 5, 55);" href="index.html">ETUSIVU</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: rgb(5, 5, 55);" href="#contact">YHTEYSTIEDOT</a>
+            </li>
+            
+            <!-- Alasvetovalikko 1 alkaa -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(5, 5, 55);" href="#co-operate" id="navbardrop" data-toggle="dropdown">PALVELUT</a>
+                <div class="dropdown-menu" style="background-color: rgb(255, 246, 227);">
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#pricing">HINNASTO</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">JÄSENYYS</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">TEKIJÄT</a>
+                </div>
+            </li>
+            <!-- Alasvetovalikko 1 loppuu -->
+            
+            <!-- Alasvetovalikko 2 alkaa -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(5, 5, 55);" href="#co-operate" id="navbardrop" data-toggle="dropdown">OSUUSKUNNATA</a>
+                <div class="dropdown-menu" style="background-color: rgb(255, 246, 227);">
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">TIETOA OSUUSKUNNATA</a>                        
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#">JÄSENYYS</a>
+                    <a class="dropdown-item" style="color: rgb(5, 5, 55);" href="#team">TEKIJÄT</a>
+                </div>
+            </li>
+            <!-- Alasvetovalikko 2 loppuu -->
+        </ul>
+    </nav>
+    <!-- Yläreunaan kiinnitetty valikointipalkki loppuu -->
+    <!-- Yläpalkki päättyy, kaikilla sivuilla sama -->
+
+    <!-- HINNASTO-kortit alkaa -->
+    <div class="container-fluid" style="text-align: center;">
+        <div id="accordion">
+        <div class="row">
+            <div class="col">
+                <br>
+                <h3> HINNASTO </h3>
+                <br>
+                <div>
+                    <div class="card">
+                        <div class="card-header" style="background-color: rgb(255, 235, 195;">
+                            <strong><h5 style="color: rgb(5, 5, 55);"> TAIDOKKAIDEN PALVELUT </h5></strong>
+                        </div>
+                        <div>
+                            <br>
+                            <h6> Osuuskunnassa on monta osaajaa monella ajalla </h6>
+                            <p> Klikkaamalla otsikkoa, näet palveluiden hinnat. Hinnat sisältävät ALV:n. Palvelu paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan. </p>
+                            <p>Meiltä saat myös kotitalousvahennyksen joten </p>
+                            <img src="kuvat/kotitalousvahennys.png" alt="kotitalousvahennys" style="width: 10%;">
+                            <br>
+                            <br>
+                        </div>
+                        <div class="card-header" style="background-color: rgb(255, 246, 227);">
+                            <a class="card-link" data-toggle="collapse" style="color: rgb(5, 5, 55);" href="#collapseOne">
+                               <strong> PUKEUTUMISEN PALVELUT </strong>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                            <div class="card-deck">
+                                <div class="card" style="width: 50%;">
+                                    <img class="card-img-top" src="kuvat/dressmakergirl.png" alt="dressmaker" style="width:70%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> PUKEUTUMISNEUVONTA </strong></h5>
+                                            <p class="card-text">Seuraavassa joitakin esimerkkejä pukeutumisneuvonnasta. Paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Neuvonta tyyppi  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> vartalotyypin määritys    |   100 € </p>
+                                            <hr>
+                                            <p class="biger"> puvuston määritys  |  150 € </p>
+                                            <hr>
+                                            <p class="biger"> vaatekaapin järjestys  |  alkaen 30 €/h </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/ompelija.png" alt="ompelija" style="width:65%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> UUDET VAATTEET </strong></h5>
+                                            <p class="card-text">Seuraavat esimerkit ovat uusien vaatteiden ompelun kustannuksista. Hinta rakentuu aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Työ  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> hää-/juhlapuku   |   alkaen 150 € </p>
+                                            <hr>
+                                            <p class="biger"> jakku/blaser     |   alkaen 80 € </p>
+                                            <hr>
+                                            <p class="biger"> takki     |   alkaen 80 € </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/singer.jpg" alt="singer" style="width:100%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> KORJAUSOMPELUN </strong></h5>
+                                            <p class="card-text">Seuraavat esimerkit ovat vaatteiden korjauksesta aiheutuvia kustannuksia. Hinnat määritellään tarpeen mukaan.</p>
+                                            <h6> Työ    |   Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> vetoketjun vaihto    |   alkaen 20 € </p>
+                                            <hr>
+                                            <p class="biger"> lahkeiden/hihojen lyhennys  |   alkaen 20 € </p>
+                                            <hr>
+                                            <p class="biger"> vaatteen muokkaus     |   alkaen 30 € </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" style="background-color: rgb(255, 246, 227);">
+                                <a class="collapsed card-link" data-toggle="collapse" style="color: rgb(5, 5, 55);" href="#collapseTwo">
+                                    <strong> KOTITYÖ PALVELUT </strong>
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-deck">
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/siivous.png" alt="siivous" style="width:70%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> SIIVOUS </strong></h5>
+                                            <p class="card-text"> Paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Neuvonta tyyppi  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> ikkunoiden pesu   |   30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> viikko siivous    |   30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> loppu siivous |  30 €/h </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/siivous.png" alt="siivous" style="width:70%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> KOTI PALVELUT </strong></h5>
+                                            <p class="card-text"> Paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Neuvonta tyyppi  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> ruuan laittaminen |    alkaen 30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> leivonta  |   alkaen 30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> juhlien tarjoilija    |   alkaen 30 €/h </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <div class="card-header" style="background-color: rgb(255, 246, 227);">
+                                <a class="collapsed card-link" data-toggle="collapse" style="color: rgb(5, 5, 55);" href="#collapseThree">
+                                    <strong> KOTI- JA MÖKKITALKKARI PALVELUT </strong>
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-deck">
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/talonmies.jpg" alt="talonmies" style="width:100%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> REMONTIT </strong></h5>
+                                            <p class="card-text"> Paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Työ  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> sisäpintojen maalaus  |   alkaen 40 €/h </p>
+                                            <hr>
+                                            <p class="biger"> huonekalun kasaaminen |   30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> nikkarointi   |   30 €/h </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/talonmies.jpg" alt="laptop" style="width:100%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> TALONMIES </strong></h5>
+                                            <p class="card-text"> Paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Työ  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> haravointi    |   30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> lumenluonti   |  30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> renkaiden vaihto  |   30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> lampun vaihto |    30 €/h </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" style="background-color: rgb(255, 246, 227);">
+                                <a class="collapsed card-link" data-toggle="collapse" style="color: rgb(5, 5, 55);" href="#collapseFour">
+                                   <strong> IT PALVELUT </strong>
+                                </a>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                <div class="card-deck">
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/laptop.jpg" alt="laptop" style="width:100%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> TIETOKONEHUOLTO </strong></h5>
+                                            <p class="card-text"> Tietokoneen huollot suorritetaan jokao etäpalvelulla tai asiakkaan luona. Paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Työ  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> ohjelmistojen päivtys |   30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> tietokoneen puhdistus |  30 €/h </p>
+                                            <hr>
+                                            <p class="biger"> lähituki  |   30 €/h </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color: darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card" style="width: 50%;">
+                                        <img class="card-img-top" src="kuvat/laptop.jpg" alt="laptop" style="width:100%">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><strong> NETTISIVUT </strong></h5>
+                                            <p class="card-text"> Paketit rakennetaan aina asiakkaan yksilöllisen tarpeen mukaan.</p>
+                                            <h6> Työ  |  Työn hinta </h6>
+                                            <hr>
+                                            <p class="biger"> WordPress sivut   |   alkaen 250 € </p>
+                                            <hr>
+                                            <p class="biger"> Alusta alkaen-paketti |  50 €/h </p>
+                                            <hr>
+                                            <p class="biger"> Neuvonta |   50 €/h </p>
+                                            <hr>
+                                            <p class="biger"> www-suvujen ulkoasun suunittelu   |   alkaen 250 € </p>
+                                            <hr>
+                                            <a href="#" class="card-link" style="color:darkorange;">Ota yhteyttä tekijään</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HINNASTO-kortit päättyy -->
+
+    <!-- Alapalkki alkaa, kaikilla sivuilla sama -->
+    <div id="my-footer">
+        <hr style="height:1px; background-color: orange;">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--LINKIT 1 alkaa -->
+                <div class="col-sm">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Usein käytetyt sivut</h6>
+                    <p> <a href="#index">ETUSIVU</a> </p>
+                    <p> <a href="#team">TEKIJÄT</a> </p>
+                    <p> <a href="#pricing">HINNASTO</a> </p>
+                    <p> <a href="#cooperative">TIETOA OSUUSKUNNASTA</a> </p>
+                    <p> <a href="#contact">OTA YHTEYTTÄ</a> </p>
+                </div>
+                <!--LINKIT 1 loppuu -->
+                
+                <!--Yhteystiedot alkaa -->
+                <div class="col-sm">
+                    <h6 class="text-uppercase font-weight-bold">YHTEYSTIEDOT</h6>
+                    <p>Postiosoite: <br>
+                        Laaduntie 4 B 10, 33480 Ylöjärvi
+                    </p>
+                    <p>Sähköposti: <br>
+                        <a href="mailto:info@taidokkaat.fi">info@taidokkaat.fi</a>
+                    </p>
+                    <p>Puhelin: <br>
+                        <a href="tel:+35840 621 6671">+358 40 621 6671</a>, arkisin klo 9-17
+                    </p>
+                    <p>Y-tunnus: <br>
+                        2753916-1</p>
+                        <!-- Yhteystiedot loppuu -->
+                    </div>
+                    
+                    <!--LINKIT 2 alkaa-->
+                    <div class="col-sm">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Linkki vinkit</h6>
+                        <p> <a href="https://pellervo.fi/" target="_blank">Pellervo, osuuskuntakeskus</a> </p>
+                        <p> <a href="https://perustajanopas.pellervo.fi/" target="_blank">Osuuskunnan perustajan opas</a> </p>
+                        <p> <a href="https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48011/osuuskunnan-ja-sen-jasenen-verotuksesta/" target="_blank">Osuuskunnan ja sen jäsenen verotus-vero.fi</a> </p>
+                        <br>
+                    </div>
+                    <!--LINKIT 2 LOPPUU -->
+                </div>
+            </div>
+           
+            <hr style="height:1px; background-color: orange;">
+            
+            <!-- Sivut aukeaa uuteen selainikkunaan  -->
+            <div id="copyright">
+                 <div class="col">
+                    <div>
+                        <!-- Copyright ja Tietosuojaseloste -->
+                        <div>
+                            <strong><a href="https://www.digiturvamalli.fi/kayttoehdot" target="_blank">Käyttöehdot</a>
+                                |   <a href="https://tietosuoja.fi/tietosuojalaki" target="_blank">Tietosuojaseloste</a>
+                                |   <a href="https://www.saavutettavuusvaatimukset.fi/digipalvelulain-vaatimukset/" target="_blank">Saavutettavuusseloste</a>
+                                |   <a href="https://support.google.com/chrome/answer/95647?hl=fi&co=GENIE.Platform%3DDesktop" target="_blank">Evästeet</a>
+                            </strong>
+                        </div>
+                        <!-- LOPPUU Grid column; Copyright ja Tietosuojaseloste -->
+                    </div>
+                </div>
+
+                <hr style="height:1px; background-color: orange;">
+
+                <p>© 2021 Copyright: Osuuskunta Taidokkaat / Saila Hyvönen</p>
+            </div>
+        </div>
+    </div>
+    <!-- Alapalkki loppuu, kaikilla sivuilla sama -->
+
+</body>
+</html>
